@@ -1,0 +1,11 @@
+/data
+/bin
+/data/**
+/bin/**
+*.csv
+/obj
+/.vscode
+/dist
+/releases
+.DS_Store
+*Zone.Identifier

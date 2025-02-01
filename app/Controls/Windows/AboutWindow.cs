@@ -64,7 +64,7 @@ or visit: <https://www.gnu.org/licenses/gpl-3.0.html>";
                 {
                     ImGui.Text("LabelChecker");
                     ImGui.Separator();
-                    ImGui.Text("Version: 1.0.0");
+                    ImGui.Text("Version: 1.0.1");
                     ImGui.Text("A tool for checking and correcting image labels.");
                     ImGui.Spacing();
 
@@ -74,7 +74,7 @@ or visit: <https://www.gnu.org/licenses/gpl-3.0.html>";
                     {
                         System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
                         {
-                            FileName = "https://discord.gg/GGQXBGqu",
+                            FileName = "https://discord.gg/tGBg7z2hSU",
                             UseShellExecute = true
                         });
                     }

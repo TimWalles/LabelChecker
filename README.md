@@ -1,7 +1,7 @@
 # LabelChecker Application
 
 ## Overview
-LabelChecker is a desktop application built with MonoGame and ImGui.NET for processing and managing label data files. It works in conjunction with the [LabelChecker Data Pipeline](https://gitlab.igb-berlin.de/data_pipelines/labelchecker_data_pipeline) to provide a user-friendly interface for:
+LabelChecker is a desktop application built with MonoGame and ImGui.NET for processing and managing label data files. It works in conjunction with the [LabelChecker Data Pipeline](https://github.com/TimWalles/LabelChecker_Pipeline) to provide a user-friendly interface for:
 - Managing and editing label files
 - Processing image data with associated labels
 - Validating and correcting pipeline outputs

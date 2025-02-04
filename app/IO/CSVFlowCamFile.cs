@@ -46,7 +46,6 @@ namespace LabelChecker.IO
             public int SrcImage { get; set; }
             public int SrcX { get; set; }
             public int SrcY { get; set; }
-            public string ImageId { get; set; }
             public int ImageX { get; set; }
             public int ImageY { get; set; }
             public int ImageW { get; set; }
@@ -96,7 +95,6 @@ namespace LabelChecker.IO
             public double GeodesicLength { get; set; }
             public double GeodesicThickness { get; set; }
             public double Intensity { get; set; }
-            public double IntensityCalimage { get; set; }
             public double Length { get; set; }
             public int Ppc { get; set; }
             public double Perimeter { get; set; }

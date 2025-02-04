@@ -161,7 +161,7 @@ Application data is stored in:
 - macOS: `~/Library/Application Support/LabelChecker/`
 
 ## Version
-Current version: 1.0.1
+Current version: 1.0.2
 
 ## Support
 For issues and feature requests, please use the GitLab issue tracker.

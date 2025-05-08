@@ -118,6 +118,8 @@ namespace LabelChecker.IO
             public string LabelPredicted { get; set; }
             public double ProbabilityScore { get; set; }
             public string LabelTrue { get; set; }
+            public double BiovolumeHSosik { get; set; }
+            public double SurfaceAreaHSosik { get; set; }
         }
 
         public class DataFileMap

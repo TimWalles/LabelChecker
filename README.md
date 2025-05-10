@@ -1,7 +1,7 @@
 # LabelChecker Application
 
 ## Download
-You can find the compiled version of the program for Windows, Linux and MasOS in the [releases](https://github.com/TimWalles/LabelChecker/releases/latest).
+You can find the compiled version of the program for Windows, Linux and MasOS in <https://github.com/TimWalles/LabelChecker/releases/latest>.
 
 ## Overview
 LabelChecker is a desktop application built with MonoGame and ImGui.NET for processing and managing label data files. It works in conjunction with the [LabelChecker Data Pipeline](https://github.com/TimWalles/LabelChecker_Pipeline) to provide a user-friendly interface for:

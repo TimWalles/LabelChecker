@@ -36,7 +36,7 @@ namespace LabelChecker.Controls
         public MainMenuEventTracker EventTracker = new();
         public float LabelFontSize = 1.25f;
         public PropertyInfo SelectedProperty = null;
-        readonly string[] sort_by_column_names = ["Id", "AbdArea", "AbdDiameter", "AbdVolume", "CircleFit", "Length", "Roughness", "Transparency", "Width", "ProbabilityScore", "BiovolumeHSosik", "SurfaceAreaHSosik"];
+        readonly string[] sort_by_column_names = ["Id", "AbdArea", "AbdDiameter", "AbdVolume", "CircleFit", "Length", "Roughness", "Transparency", "Width", "ProbabilityScore", "BiovolumeMS", "SurfaceAreaMS"];
         readonly string[] to_exclude = ["GroupId", "SrcImage", "SrcX", "SrcY", "ImageX", "ImageY", "ImageId", "ImageW", "ImageH", "IntensityCalimage", "ElapsedTime", "CalConst", "CalImage"];
         public bool AutoFontSize = false;
         public bool CheckedOnly = false;

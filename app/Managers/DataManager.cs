@@ -258,7 +258,12 @@ namespace LabelChecker.Manager
         public string GetPropertyValue(CSVLabelCheckerFile.DataRow data, string propertyName)
         {
             PropertyInfo property = typeof(CSVLabelCheckerFile.DataRow).GetProperty(propertyName);
-            return property.GetValue(data, null).ToString();
+            object value = property.GetValue(data, null);
+            if (value is double d)
+            {
+                return d.ToString("F3", CultureInfo.InvariantCulture);
+            }
+            return value?.ToString();
         }
 
         public void Save(bool manualSave = false)

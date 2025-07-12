@@ -53,9 +53,34 @@ namespace LabelChecker.Manager
                     }
 
                     // Load the image or collage
-                    var path = string.IsNullOrEmpty(dataRow.ImageFilename)
-                        ? Path.Combine(Path.GetDirectoryName(dataFilePath.FilePath), dataRow.CollageFile) // collages are inside the same folder
-                        : Path.Combine(Path.GetDirectoryName(dataFilePath.FilePath), dataRow.Name, dataRow.ImageFilename); // images are stored in a folder with the same sample name
+                    string path;
+                    if (string.IsNullOrEmpty(dataRow.ImageFilename))
+                    {
+                        // collages are inside the same folder
+                        path = Path.Combine(Path.GetDirectoryName(dataFilePath.FilePath), dataRow.CollageFile);
+                    }
+                    else
+                    {
+                        // Try original folder (sample name)
+                        var baseDir = Path.GetDirectoryName(dataFilePath.FilePath);
+                        var sampleFolder = Path.Combine(baseDir, dataRow.Name);
+                        var sampleImagesFolder = Path.Combine(baseDir, dataRow.Name + " Images");
+                        var imagePath = Path.Combine(sampleFolder, dataRow.ImageFilename);
+                        var imagePathWithImages = Path.Combine(sampleImagesFolder, dataRow.ImageFilename);
+                        if (File.Exists(imagePath))
+                        {
+                            path = imagePath;
+                        }
+                        else if (File.Exists(imagePathWithImages))
+                        {
+                            path = imagePathWithImages;
+                        }
+                        else
+                        {
+                            // fallback to original logic (sample name folder)
+                            path = imagePath;
+                        }
+                    }
 
                     // catch if the collages aren't with the .csv data
                     if (!File.Exists(path))

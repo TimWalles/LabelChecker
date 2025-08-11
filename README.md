@@ -1,3 +1,6 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16785289.svg)](https://doi.org/10.5281/zenodo.16785289)
+
+
 # LabelChecker Application
 
 ## Download
